@@ -50,10 +50,10 @@ if ( ! function_exists('array_pluck'))
 }
 if ( ! function_exists('permutation_array'))
 {
-    function permutation_array($arr,$arr_onedimension){
+    function permutation_array($arr,$arr_onedimension,$key){
     	$arr3=array();
 		foreach($arr_onedimension as $val){
-			$arr3=array_merge($arr3,array_pluck_permutation($arr,$val));
+			$arr3=array_merge($arr3,array_pluck_permutation($arr,$val,$key));
 		}	
 		return $arr3;
     }
@@ -61,16 +61,16 @@ if ( ! function_exists('permutation_array'))
 }
 if ( ! function_exists('array_pluck_permutation'))
 {
-	function array_pluck_permutation($arr,$val){
-		 return array_map(function($arr) use($val){
-			 return array_push_assoc($arr,$val)	;  	
+	function array_pluck_permutation($arr,$val,$key){
+		 return array_map(function($arr) use($val,$key){
+			 return array_push_assoc($arr,$val,$key)	;  	
 		 },$arr);
 	 }
 }
 if ( ! function_exists('array_push_assoc'))
 {
-	function array_push_assoc($array,$value){
-	 $array['ess'] = $value;
+	function array_push_assoc($array,$value,$key){
+	 $array["$key"] = $value;
 	 return $array;
 	}
 }
