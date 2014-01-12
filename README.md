@@ -16,17 +16,12 @@ This is awesome helper with below features:
 5. permutation_array: permutations of conditions,[Please check feasibility of your requirement.]
 
 
-@ vrushank.in
-
-@jaiminvaja.com
-
-Will keep Updating.
 
 Version 2.0:
 
 Change Log:
 
-File Opration Library added to perform :
+[A]File Opration Library added to perform :
 
 writeToFile:
 writeToFile($fileName,$content,$mode='a');
@@ -55,3 +50,9 @@ displayDir($directoryPath);
 delFiles :
 delFiles($directoryPath,$delInnerFolders=FALSE);
 
+[B] Added Hashpassword helper:
+
+This is secure method to store password in database.
+This has used salt and SHA1, even developer can not directly change password from database or cannot know original password.
+
+Only owner does know this password and can be matched/encrpt/decrypt by code only.
