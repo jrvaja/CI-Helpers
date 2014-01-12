@@ -21,3 +21,37 @@ This is awesome helper with below features:
 @jaiminvaja.com
 
 Will keep Updating.
+
+Version 2.0:
+
+Change Log:
+
+File Opration Library added to perform :
+
+writeToFile:
+writeToFile($fileName,$content,$mode='a');
+
+readFile:
+readFile($fileName)
+
+nameOfFile :
+nameOfFile($directoryPath,$NeedPath=FALSE);
+
+dirFileInfo :
+dirFileInfo($directoryPath);
+
+getFileInfo :
+getFileInfo($fileName);
+
+mimeOfFile :
+mimeOfFile($fileName);
+
+downloadFile :
+downloadFile($fileName,$content);
+
+displayDir :
+displayDir($directoryPath);
+
+delFiles :
+delFiles($directoryPath,$delInnerFolders=FALSE);
+
