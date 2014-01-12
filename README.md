@@ -4,6 +4,8 @@ CI-Helpers
 This is all CI helper that we need anytime in usual preojects
 
 
+<b>[A]Array Helpers : </b>
+
 This is awesome helper with below features:
 1. mpr():Print array result in "pre" [Thanks to Vrushank]
 
@@ -21,38 +23,38 @@ Version 2.0:
 
 Change Log:
 
-[A]File Opration Library added to perform :
+<b>[B]File Opration Library added to perform : </b>
 
-writeToFile:
+<b><i>writeToFile:</i></b <br>
 writeToFile($fileName,$content,$mode='a');
 
-readFile:
+<b><i>readFile:</i></b><br>
 readFile($fileName)
 
-nameOfFile :
+<b><i>nameOfFile :</i></b><br>
 nameOfFile($directoryPath,$NeedPath=FALSE);
 
-dirFileInfo :
+<b><i>dirFileInfo :</i></b><br>
 dirFileInfo($directoryPath);
 
-getFileInfo :
+<b><i>getFileInfo :</i></b><br>
 getFileInfo($fileName);
 
-mimeOfFile :
+<b><i>mimeOfFile :</i></b><br>
 mimeOfFile($fileName);
 
-downloadFile :
+<b><i>downloadFile :</i></b><br>
 downloadFile($fileName,$content);
 
-displayDir :
+<b><i>displayDir :</i></b><br>
 displayDir($directoryPath);
 
-delFiles :
+<b><i>delFiles :</i></b><br>
 delFiles($directoryPath,$delInnerFolders=FALSE);
 
-[B] Added Hashpassword helper:
+<b>[C] Added Hashpassword helper: </b>
 
 This is secure method to store password in database.
 This has used salt and SHA1, even developer can not directly change password from database or cannot know original password.
 
-Only owner does know this password and can be matched/encrpt/decrypt by code only.
+<i>Only owner does know this password and can be matched/encrpt/decrypt by code only.</i>
