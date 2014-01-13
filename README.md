@@ -22,6 +22,7 @@ This is awesome helper with below features:
 Version 2.0:
 
 Change Log:
+- remove hash password creator from array helper and add new helper for secure password.
 
 <b>[B]File Opration Library added to perform : </b>
 
