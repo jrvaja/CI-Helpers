@@ -74,4 +74,23 @@ if ( ! function_exists('array_push_assoc'))
 	 return $array;
 	}
 }
+if(! function_exists('jSearch')){
+	function jSearch($array, $key, $value)
+	{
+	    $results = array();
+
+	    if (is_array($array)) {
+	        if (isset($array[$key]) && $array[$key] == $value) {
+	            $results[] = $array;
+	        }
+
+	        foreach ($array as $subarray) {
+	            $results = array_merge($results, jSearch($subarray, $key, $value));
+	        }
+	    }
+
+	    return $results;
+	}
+
+}
 ?>
